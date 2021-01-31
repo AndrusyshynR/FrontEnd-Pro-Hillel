@@ -1,35 +1,38 @@
 //Задание 1
-var userAge = +prompt('Склько лет?');
-var status = prompt('Куришь?');
-var status = confirm('Куришь?');
+// var userAge = +prompt('Склько лет?');
+// var status = confirm('Куришь?');
 
-if ( userAge < 18, status === 'нет' ) {
-	alert('Так держать!');
-} else if ( userAge < 18, status === 'да' ) {
-	alert('Маме роскажу!');
-} else if ( userAge > 18, status === 'нет' ) {
-	alert('Молодец, и не надо!');
-} else if ( userAge > 18, status === 'да' ) {
-	alert('Ну и зря!');
-} else {
-	alert('Говори правду!');
-}
+// if (( userAge < 18 ) & ( status === 'false' )) {
+// 	alert('Так держать!');
+
+// } else if (( userAge < 18 ) & ( status === 'true' )) {
+// 	alert('Маме роскажу!');
+
+// } else if (( userAge >= 18 ) & ( status === 'false' )) {
+// 	alert('Молодец, и не надо!');
+
+// } else if (( userAge >= 18 ) & ( status === 'true' )) {
+// 	alert('Ну и зря!');
+
+// } else {
+// 	alert('Говори правду!');
+// }
 
 
-// switch ( true, status) {
-// 	case (userAge <= 18 || status === 'false'):
+// switch ( true ) {
+// 	case (( userAge < 18 ) && ( status === 'false' )):
 // 		alert('Так держать!');
 // 		break;
 
-// 	case (userAge >= 18 || status === 'true'):
-// 		alert('Маме роскажу!');
+// 	case (( userAge < 18 ) || ( status === 'true' )):
+// 		alert('Маме раскажу!');
 // 		break;
 
-// 	case (userAge <= 18 || status === 'false'):
+// 	case (( userAge >= 18 ) && ( status === 'false' )):
 // 		alert('Молодец, и не надо!');
 // 		break;
 
-// 	case (userAge <= 18 || status === 'true'):
+// 	case (( userAge >= 18 ) || ( status === 'true' )):               // не понял как заставить его сработать
 // 		alert('Ну и зря!');
 // 		break;
 
@@ -38,11 +41,7 @@ if ( userAge < 18, status === 'нет' ) {
 // }
 
 
-
-
-
 //Задание 2
-
 // var x = +prompt('Введите первое значение');
 // var y = +prompt('Введите второе значение');
 
@@ -56,7 +55,6 @@ if ( userAge < 18, status === 'нет' ) {
 
 
 //Задание 3
-
 // var km = +prompt('Введите первое значение в километрах');
 // var fu = +prompt('Введите второе значение в футах');
 
