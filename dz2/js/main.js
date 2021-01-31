@@ -1,19 +1,19 @@
 //Задание 1
-// var userAge = +prompt('Склько лет?');
-// var status = prompt('Куришь?');
-// var status = confirm('Куришь?');
+var userAge = +prompt('Склько лет?');
+var status = prompt('Куришь?');
+var status = confirm('Куришь?');
 
-// if ( userAge < 18, status === 'нет' ) {
-// 	alert('Так держать!');
-// } else if ( userAge < 18, status === 'да' ) {
-// 	alert('Маме роскажу!');
-// } else if ( userAge > 18, status === 'нет' ) {
-// 	alert('Молодец, и не надо!');
-// } else if ( userAge > 18, status === 'да' ) {
-// 	alert('Ну и зря!');
-// } else {
-// 	alert('Говори правду!');
-// }
+if ( userAge < 18, status === 'нет' ) {
+	alert('Так держать!');
+} else if ( userAge < 18, status === 'да' ) {
+	alert('Маме роскажу!');
+} else if ( userAge > 18, status === 'нет' ) {
+	alert('Молодец, и не надо!');
+} else if ( userAge > 18, status === 'да' ) {
+	alert('Ну и зря!');
+} else {
+	alert('Говори правду!');
+}
 
 
 // switch ( true, status) {
