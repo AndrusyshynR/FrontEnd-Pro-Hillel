@@ -1,0 +1,19 @@
+body {
+	background: rgb(64, 66, 64);
+}
+
+.divstyle {
+	margin: 200px auto;
+	border: 1px solid black;
+	background: rgb(190, 182, 182);
+	width: 500px;
+	height: 400px;
+	color: black;
+	padding: 70px 25px 25px;
+}
+
+img {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
