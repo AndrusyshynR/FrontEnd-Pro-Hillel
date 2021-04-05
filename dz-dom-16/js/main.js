@@ -18,7 +18,7 @@ function popupBay() {
 		isShow: false,
 		time: 0
 	})
-	var info = JSON.stringify(localStorage.getItem('ShowSalePopup'));
+	var info = JSON.parse(localStorage.getItem('ShowSalePopup'));
 	console.log(info)
 }
 
@@ -35,7 +35,7 @@ function popupClose() {
 	})
 }
 
-var date = new Date('April 21 2021 00:00:00');
+var date = new Date('April 15 2021 00:00:00');
 
 function counter () {
 	var nowDate = new Date();
