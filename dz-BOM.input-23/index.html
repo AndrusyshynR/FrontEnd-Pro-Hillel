@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Calculator</h1>
+	<div>
+		<h2>Введите габариты</h2>
+		<span>Длина</span>
+		<input class="length" type="text" placeholder="см">
+		<span>Ширина</span>
+		<input class="width" type="text" placeholder="см">
+		<span>Высота</span>
+		<input class="height" type="text" placeholder="см">
+	</div>
+
+	<div>
+		<h2>Выберете тип груза</h2>
+		<div>
+			<label><input class="all-checkbox" type="checkbox" value="0.3">Документы</label>
+		</div>
+		<div>
+			<label><input class="all-checkbox" type="checkbox" value="1.5">Хрупкий груз</label>
+		</div>
+		<div>
+			<label><input class="all-checkbox" type="checkbox" value="1.7">Спец-груз</label>
+		</div>
+	</div>
+
+	<div>
+		<h2>Выберете тип доставки</h2>
+		<label><input class="radio" name="select" type="radio" value="1.3">Доставка на отделение</label>
+		<label><input class="radio" name="select" type="radio" value="1.7">Доставка курьером</label>
+	</div>
+
+	<div>
+		<h2>Укажите расстояние в км</h2>
+		<input class="range" type="range" value="0" step="5" min="0" max="500">
+		<span class="value-range">0км</span>
+	</div>
+
+	<div>
+		<span class="result">Стоимость доставки 0грн</span>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
