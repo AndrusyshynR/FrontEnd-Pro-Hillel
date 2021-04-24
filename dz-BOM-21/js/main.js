@@ -9,12 +9,16 @@ var valueThree = document.querySelector('#third');
 var result = document.querySelector('.result');
 var inpBut = document.querySelector('.but');
 
-//Функция для прописи только цыфр в инпуты.
 valueOne.addEventListener('keydown', onlyNumbers);
 valueTwo.addEventListener('keydown', onlyNumbers);
 valueThree.addEventListener('keydown', onlyNumbers);
 
+inpBut.addEventListener("click", isEmptyValue);
+
+//В инпутах должны быть только цифры
 function onlyNumbers(event) {
+	isEmptyValue();
+
 	if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || (event.keyCode == 65 && event.ctrlKey === true) ||
 		(event.keyCode >= 35 && event.keyCode <= 39)) {
 		return;
@@ -23,21 +27,22 @@ function onlyNumbers(event) {
 			event.preventDefault();
 		}
 	}
+}
 
-	//Инпуты не должны быть пустыми
+//Инпуты не должны быть пустыми
+function isEmptyValue() {
 	if (valueOne.value !== '' && valueTwo.value !== '' || valueThree.value !== '') {
-		inpBut.addEventListener("click", sumNumber);
-		function sumNumber() {
-			var sum = +valueOne.value + +valueTwo.value + +valueThree.value;
-			result.value = sum;
-		};
-	} else if(valueOne.value !== '' || valueTwo.value !== '' && valueThree.value !== '') {
-		function sumNumber() {
-			var sum = +valueOne.value + +valueTwo.value + +valueThree.value;
-			result.value = sum;
-		};
+		sumNumber()
+	} else if (valueOne.value !== '' || valueTwo.value !== '' && valueThree.value !== '') {
+		sumNumber()
 	}
 }
+
+// Функция подсчета чисел
+function sumNumber() {
+	var sum = +valueOne.value + +valueTwo.value + +valueThree.value;
+	result.value = sum;
+};
 
 // Дан инпут. В него вводится число. По потери фокуса найдите сумму цифр этого числа. 
 var myNumber = document.querySelector('.input-number');
@@ -46,13 +51,9 @@ var sumNum = document.querySelector('.res');
 myNumber.addEventListener('blur', sumOfNumbers);
 
 function sumOfNumbers() {
-	var sumValue = 0;
 	var str = myNumber.value;
-	var newArr = str.split('');
 
-	for (var i = 0; i < newArr.length; i++) {
-		sumValue = sumValue + +newArr[i];
-	}
-
-	sumNum.innerText = sumValue;
+	str.split('').reduce(function (a, b) {
+		return sumNum.innerText = +a + +b;
+	})
 }
