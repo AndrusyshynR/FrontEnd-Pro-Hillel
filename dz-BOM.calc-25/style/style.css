@@ -1,0 +1,43 @@
+body{
+	background: #65625e;
+}
+
+h2{
+	text-align: center;
+	color: #ecdd20;
+	font-size: 35px;
+}
+
+section {
+	display: none;
+}
+
+.active-block {
+	display: block;
+	background: rgb(182, 177, 177);
+	margin-top: 15%;
+	margin: 0  auto;
+	max-width: 60%;
+	min-height: 333px;
+	padding: 20px 20px;
+	border: 1px solid #cccc;
+	border-radius: 15px;
+}
+
+.showing-imgs {
+	display: flex;
+	align-items: center;
+}
+
+.result-imgs, .body-imgs {
+	display: block;
+	width: 300px;
+	height: 250px;
+	margin-left: 170px;
+}
+
+.activity-result, .form-result {
+	margin-left: 20px;
+	font-size: 24px;
+	color: #000000;
+}
