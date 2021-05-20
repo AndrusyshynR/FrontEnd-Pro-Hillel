@@ -27,7 +27,3 @@ var arr = {
 		this['ru'].push(newColor);
 	}
 };
-
-arr.fullArrCollors = 'розовый';
-arr.fullArrCollors = 'черный';
-console.log('task3 -->', arr.fullArrCollors);

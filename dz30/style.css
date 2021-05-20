@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	background: #a6a09d;
+}
+
+.inp-value {
+	font-size: 20px;
+	background: black;
+	color: #fff;
+	border: 2px solid rgb(12, 201, 84);
+}
+
+.inp-btn {
+	font-size: 20px;
+	cursor: pointer;
+	background: black;
+	color: #fff;
+}
+
+.form {
+	margin: 400px auto 0;
+}
+
+.form-none {
+	display: none;
+}
+
+.btn {
+	display: none;
+}
+
+.btn-show {
+	margin: 400px auto 0;
+
+	padding: 10px 20px;
+	background: #000;
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+
+	display: block;
+}
+
+.btn-show:hover {
+	background: rgb(165, 14, 14);
+}
